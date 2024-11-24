@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formularz Flask</title>
+</head>
+<body>
+    <h1>Prosty Formularz</h1>
+    <form method="POST" action="/">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Prześlij</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
